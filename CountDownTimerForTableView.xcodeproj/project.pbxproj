@@ -14,6 +14,9 @@
 		B5D3F3B81B9F1CE7002BEA99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D3F3B71B9F1CE7002BEA99 /* Images.xcassets */; };
 		B5D3F3BB1B9F1CE7002BEA99 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D3F3B91B9F1CE7002BEA99 /* LaunchScreen.xib */; };
 		B5D3F3C71B9F1CE7002BEA99 /* CountDownTimerForTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3F3C61B9F1CE7002BEA99 /* CountDownTimerForTableViewTests.m */; };
+		B5D3F3D21BA1D013002BEA99 /* TimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3F3D11BA1D013002BEA99 /* TimeModel.m */; };
+		B5D3F44E1BA70363002BEA99 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3F44D1BA70363002BEA99 /* BaseTableViewCell.m */; };
+		B5D3F4511BA7089A002BEA99 /* TimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D3F4501BA7089A002BEA99 /* TimeCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,13 @@
 		B5D3F3C01B9F1CE7002BEA99 /* CountDownTimerForTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountDownTimerForTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D3F3C51B9F1CE7002BEA99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5D3F3C61B9F1CE7002BEA99 /* CountDownTimerForTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountDownTimerForTableViewTests.m; sourceTree = "<group>"; };
+		B5D3F3D01BA1D013002BEA99 /* TimeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeModel.h; sourceTree = "<group>"; };
+		B5D3F3D11BA1D013002BEA99 /* TimeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeModel.m; sourceTree = "<group>"; };
+		B5D3F3D61BA1D1A8002BEA99 /* CommonMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
+		B5D3F44C1BA70363002BEA99 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		B5D3F44D1BA70363002BEA99 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		B5D3F44F1BA7089A002BEA99 /* TimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeCell.h; sourceTree = "<group>"; };
+		B5D3F4501BA7089A002BEA99 /* TimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +93,15 @@
 			children = (
 				B5D3F3AE1B9F1CE7002BEA99 /* AppDelegate.h */,
 				B5D3F3AF1B9F1CE7002BEA99 /* AppDelegate.m */,
+				B5D3F3D61BA1D1A8002BEA99 /* CommonMacro.h */,
 				B5D3F3B11B9F1CE7002BEA99 /* ViewController.h */,
 				B5D3F3B21B9F1CE7002BEA99 /* ViewController.m */,
+				B5D3F3D01BA1D013002BEA99 /* TimeModel.h */,
+				B5D3F3D11BA1D013002BEA99 /* TimeModel.m */,
+				B5D3F44C1BA70363002BEA99 /* BaseTableViewCell.h */,
+				B5D3F44D1BA70363002BEA99 /* BaseTableViewCell.m */,
+				B5D3F44F1BA7089A002BEA99 /* TimeCell.h */,
+				B5D3F4501BA7089A002BEA99 /* TimeCell.m */,
 				B5D3F3B41B9F1CE7002BEA99 /* Main.storyboard */,
 				B5D3F3B71B9F1CE7002BEA99 /* Images.xcassets */,
 				B5D3F3B91B9F1CE7002BEA99 /* LaunchScreen.xib */,
@@ -219,8 +236,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D3F44E1BA70363002BEA99 /* BaseTableViewCell.m in Sources */,
 				B5D3F3B31B9F1CE7002BEA99 /* ViewController.m in Sources */,
+				B5D3F4511BA7089A002BEA99 /* TimeCell.m in Sources */,
 				B5D3F3B01B9F1CE7002BEA99 /* AppDelegate.m in Sources */,
+				B5D3F3D21BA1D013002BEA99 /* TimeModel.m in Sources */,
 				B5D3F3AD1B9F1CE7002BEA99 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +436,7 @@
 				B5D3F3CC1B9F1CE7002BEA99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5D3F3CD1B9F1CE7002BEA99 /* Build configuration list for PBXNativeTarget "CountDownTimerForTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +445,7 @@
 				B5D3F3CF1B9F1CE7002BEA99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
