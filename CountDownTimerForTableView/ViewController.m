@@ -59,7 +59,6 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_TIME_CELL object:nil];
 }
 
-
 #pragma mark - TableView
 
 - (void)initTableView {
@@ -79,8 +78,6 @@
 
     return self.m_dataArray.count;
 }
-
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
@@ -114,7 +111,5 @@
     
     tmpCell.m_isDisplayed = NO;
 }
-
-
 
 @end
